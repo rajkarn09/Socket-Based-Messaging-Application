@@ -1,0 +1,245 @@
+[2026-06-20 10:50:22,016] INFO     server  Server listening on 127.0.0.1:5000  (default rooms: General, Random)
+[2026-06-20 10:52:31,879] INFO     server  Server listening on 127.0.0.1:5000  (default rooms: General, Random)
+[2026-06-20 10:52:54,433] INFO     server  New TCP connection from 127.0.0.1:50846
+[2026-06-20 10:52:54,435] ERROR    server  Protocol error for 'None': Payload length 1195725856 exceeds maximum allowed size of 16777216 bytes.
+[2026-06-20 10:52:54,436] INFO     server  New TCP connection from 127.0.0.1:50847
+[2026-06-20 10:52:54,437] INFO     server  New TCP connection from 127.0.0.1:50848
+[2026-06-20 10:52:55,564] ERROR    server  Protocol error for 'None': Payload length 1195725856 exceeds maximum allowed size of 16777216 bytes.
+[2026-06-20 10:52:55,574] ERROR    server  Protocol error for 'None': Payload length 1195725856 exceeds maximum allowed size of 16777216 bytes.
+[2026-06-20 10:52:55,576] INFO     server  New TCP connection from 127.0.0.1:50849
+[2026-06-20 10:52:55,577] ERROR    server  Protocol error for 'None': Payload length 1195725856 exceeds maximum allowed size of 16777216 bytes.
+[2026-06-20 10:53:22,419] INFO     server  New TCP connection from 127.0.0.1:50850
+[2026-06-20 10:53:22,428] DEBUG    protocol  RECV  40 bytes  type=CONNECT
+[2026-06-20 10:53:22,428] INFO     server  User 'Alice' registered from 127.0.0.1:50850
+[2026-06-20 10:53:22,429] DEBUG    protocol  SENT  122 bytes  type=CONNECT_OK
+[2026-06-20 10:53:22,661] INFO     server  User 'Alice' disconnected (was in room 'General').
+[2026-06-20 10:55:05,807] INFO     server  Server listening on 127.0.0.1:5000  (default rooms: General, Random)
+[2026-06-20 10:55:16,379] INFO     server  New TCP connection from 127.0.0.1:50880
+[2026-06-20 10:55:16,380] DEBUG    protocol  RECV  40 bytes  type=CONNECT
+[2026-06-20 10:55:16,380] INFO     server  User 'Alice' registered from 127.0.0.1:50880
+[2026-06-20 10:55:16,380] DEBUG    protocol  SENT  122 bytes  type=CONNECT_OK
+[2026-06-20 10:55:33,189] DEBUG    protocol  RECV  39 bytes  type=CREATE_ROOM
+[2026-06-20 10:55:33,189] INFO     server  Room 'Test' created by 'Alice'
+[2026-06-20 10:55:33,190] DEBUG    protocol  SENT  139 bytes  type=ROOM_CREATED
+[2026-06-20 10:55:33,190] INFO     server  'Alice' switched from 'General' to 'Test'
+[2026-06-20 10:55:33,190] DEBUG    protocol  SENT  67 bytes  type=ROOM_JOINED
+[2026-06-20 10:55:43,193] DEBUG    protocol  RECV  40 bytes  type=SEND_MSG
+[2026-06-20 10:55:43,193] DEBUG    protocol  SENT  113 bytes  type=CHAT_MSG
+[2026-06-20 10:55:43,193] INFO     server  [Test] Alice: hello
+[2026-06-20 10:56:03,499] INFO     server  New TCP connection from 127.0.0.1:50881
+[2026-06-20 10:56:03,499] DEBUG    protocol  RECV  38 bytes  type=CONNECT
+[2026-06-20 10:56:03,499] INFO     server  User 'Bob' registered from 127.0.0.1:50881
+[2026-06-20 10:56:03,500] DEBUG    protocol  SENT  126 bytes  type=CONNECT_OK
+[2026-06-20 10:56:15,069] DEBUG    protocol  RECV  56 bytes  type=INVITE
+[2026-06-20 10:56:15,069] DEBUG    protocol  SENT  92 bytes  type=INVITE
+[2026-06-20 10:56:15,069] DEBUG    protocol  SENT  61 bytes  type=INVITE_SENT
+[2026-06-20 10:56:15,069] INFO     server  'Alice' invited 'Bob' to room 'Test'
+[2026-06-20 10:56:27,115] DEBUG    protocol  RECV  37 bytes  type=JOIN_ROOM
+[2026-06-20 10:56:27,115] INFO     server  'Bob' switched from 'General' to 'Test'
+[2026-06-20 10:56:27,116] DEBUG    protocol  SENT  94 bytes  type=USER_JOINED
+[2026-06-20 10:56:27,117] DEBUG    protocol  SENT  74 bytes  type=ROOM_JOINED
+[2026-06-20 10:56:45,490] INFO     server  New TCP connection from 127.0.0.1:50892
+[2026-06-20 10:56:45,491] DEBUG    protocol  RECV  42 bytes  type=CONNECT
+[2026-06-20 10:56:45,491] INFO     server  User 'Charlie' registered from 127.0.0.1:50892
+[2026-06-20 10:56:45,491] DEBUG    protocol  SENT  134 bytes  type=CONNECT_OK
+[2026-06-20 10:56:57,013] DEBUG    protocol  RECV  58 bytes  type=INVITE
+[2026-06-20 10:56:57,013] DEBUG    protocol  SENT  92 bytes  type=INVITE
+[2026-06-20 10:56:57,013] DEBUG    protocol  SENT  63 bytes  type=INVITE_SENT
+[2026-06-20 10:56:57,014] INFO     server  'Alice' invited 'Alice' to room 'Test'
+[2026-06-20 10:57:00,906] DEBUG    protocol  RECV  37 bytes  type=JOIN_ROOM
+[2026-06-20 10:57:00,907] INFO     server  'Charlie' switched from 'General' to 'Test'
+[2026-06-20 10:57:00,908] DEBUG    protocol  SENT  98 bytes  type=USER_JOINED
+[2026-06-20 10:57:00,908] DEBUG    protocol  SENT  98 bytes  type=USER_JOINED
+[2026-06-20 10:57:00,909] DEBUG    protocol  SENT  85 bytes  type=ROOM_JOINED
+[2026-06-20 10:57:19,568] DEBUG    protocol  RECV  48 bytes  type=SEND_MSG
+[2026-06-20 10:57:19,569] DEBUG    protocol  SENT  121 bytes  type=CHAT_MSG
+[2026-06-20 10:57:19,569] DEBUG    protocol  SENT  121 bytes  type=CHAT_MSG
+[2026-06-20 10:57:19,569] DEBUG    protocol  SENT  121 bytes  type=CHAT_MSG
+[2026-06-20 10:57:19,569] INFO     server  [Test] Alice: hello charlie
+[2026-06-20 10:57:29,088] DEBUG    protocol  RECV  46 bytes  type=SEND_MSG
+[2026-06-20 10:57:29,088] DEBUG    protocol  SENT  121 bytes  type=CHAT_MSG
+[2026-06-20 10:57:29,089] DEBUG    protocol  SENT  121 bytes  type=CHAT_MSG
+[2026-06-20 10:57:29,089] DEBUG    protocol  SENT  121 bytes  type=CHAT_MSG
+[2026-06-20 10:57:29,089] INFO     server  [Test] Charlie: Hello Alice
+[2026-06-20 10:57:44,912] DEBUG    protocol  RECV  38 bytes  type=SEND_MSG
+[2026-06-20 10:57:44,913] DEBUG    protocol  SENT  109 bytes  type=CHAT_MSG
+[2026-06-20 10:57:44,913] DEBUG    protocol  SENT  109 bytes  type=CHAT_MSG
+[2026-06-20 10:57:44,913] DEBUG    protocol  SENT  109 bytes  type=CHAT_MSG
+[2026-06-20 10:57:44,913] INFO     server  [Test] Bob: Hii
+[2026-06-20 11:00:06,610] DEBUG    protocol  RECV  39 bytes  type=JOIN_ROOM
+[2026-06-20 11:00:06,611] INFO     server  'Alice' switched from 'Test' to 'Random'
+[2026-06-20 11:00:06,612] DEBUG    protocol  SENT  94 bytes  type=USER_LEFT
+[2026-06-20 11:00:06,613] DEBUG    protocol  SENT  94 bytes  type=USER_LEFT
+[2026-06-20 11:00:06,613] DEBUG    protocol  SENT  69 bytes  type=ROOM_JOINED
+[2026-06-20 11:00:15,104] DEBUG    protocol  RECV  40 bytes  type=SEND_MSG
+[2026-06-20 11:00:15,104] DEBUG    protocol  SENT  115 bytes  type=CHAT_MSG
+[2026-06-20 11:00:15,104] INFO     server  [Random] Alice: hello
+[2026-06-20 11:00:25,177] DEBUG    protocol  RECV  40 bytes  type=JOIN_ROOM
+[2026-06-20 11:00:25,178] INFO     server  'Alice' switched from 'Random' to 'General'
+[2026-06-20 11:00:25,179] DEBUG    protocol  SENT  70 bytes  type=ROOM_JOINED
+[2026-06-20 11:00:32,297] DEBUG    protocol  RECV  40 bytes  type=JOIN_ROOM
+[2026-06-20 11:00:32,298] INFO     server  'Bob' switched from 'Test' to 'General'
+[2026-06-20 11:00:32,299] DEBUG    protocol  SENT  92 bytes  type=USER_LEFT
+[2026-06-20 11:00:32,299] DEBUG    protocol  SENT  97 bytes  type=USER_JOINED
+[2026-06-20 11:00:32,300] DEBUG    protocol  SENT  77 bytes  type=ROOM_JOINED
+[2026-06-20 11:00:40,224] DEBUG    protocol  RECV  44 bytes  type=SEND_MSG
+[2026-06-20 11:00:40,224] DEBUG    protocol  SENT  120 bytes  type=CHAT_MSG
+[2026-06-20 11:00:40,224] DEBUG    protocol  SENT  120 bytes  type=CHAT_MSG
+[2026-06-20 11:00:40,224] INFO     server  [General] Alice: hello bob
+[2026-06-20 11:25:20,987] INFO     server  User 'Alice' disconnected (was in room 'General').
+[2026-06-20 11:25:20,987] DEBUG    protocol  SENT  97 bytes  type=USER_LEFT
+[2026-06-20 11:25:22,178] INFO     server  User 'Bob' disconnected (was in room 'General').
+[2026-06-20 11:25:23,204] INFO     server  User 'Charlie' disconnected (was in room 'Test').
+[2026-06-20 11:26:54,516] INFO     server  Server listening on 127.0.0.1:5000  (default rooms: General, Random)
+[2026-06-20 11:27:14,516] INFO     server  New TCP connection from 127.0.0.1:51178
+[2026-06-20 11:27:14,533] DEBUG    protocol  RECV  40 bytes  type=CONNECT
+[2026-06-20 11:27:14,533] INFO     server  User 'Alice' registered from 127.0.0.1:51178
+[2026-06-20 11:27:14,534] DEBUG    protocol  SENT  122 bytes  type=CONNECT_OK
+[2026-06-20 11:27:41,364] INFO     server  New TCP connection from 127.0.0.1:51186
+[2026-06-20 11:27:41,386] DEBUG    protocol  RECV  38 bytes  type=CONNECT
+[2026-06-20 11:27:41,386] INFO     server  User 'Bob' registered from 127.0.0.1:51186
+[2026-06-20 11:27:41,386] DEBUG    protocol  SENT  127 bytes  type=CONNECT_OK
+[2026-06-20 11:27:41,386] DEBUG    protocol  SENT  97 bytes  type=USER_JOINED
+[2026-06-20 11:28:00,748] INFO     server  New TCP connection from 127.0.0.1:51189
+[2026-06-20 11:28:00,771] DEBUG    protocol  RECV  42 bytes  type=CONNECT
+[2026-06-20 11:28:00,772] INFO     server  User 'Charlie' registered from 127.0.0.1:51189
+[2026-06-20 11:28:00,772] DEBUG    protocol  SENT  142 bytes  type=CONNECT_OK
+[2026-06-20 11:28:00,772] DEBUG    protocol  SENT  101 bytes  type=USER_JOINED
+[2026-06-20 11:28:00,772] DEBUG    protocol  SENT  101 bytes  type=USER_JOINED
+[2026-06-20 11:28:21,111] DEBUG    protocol  RECV  44 bytes  type=CREATE_ROOM
+[2026-06-20 11:28:21,111] INFO     server  Room 'Classnote' created by 'Charlie'
+[2026-06-20 11:28:21,111] DEBUG    protocol  SENT  151 bytes  type=ROOM_CREATED
+[2026-06-20 11:28:21,111] DEBUG    protocol  SENT  151 bytes  type=ROOM_CREATED
+[2026-06-20 11:28:21,112] DEBUG    protocol  SENT  151 bytes  type=ROOM_CREATED
+[2026-06-20 11:28:21,112] INFO     server  'Charlie' switched from 'General' to 'Classnote'
+[2026-06-20 11:28:21,114] DEBUG    protocol  SENT  99 bytes  type=USER_LEFT
+[2026-06-20 11:28:21,114] DEBUG    protocol  SENT  99 bytes  type=USER_LEFT
+[2026-06-20 11:28:21,115] DEBUG    protocol  SENT  74 bytes  type=ROOM_JOINED
+[2026-06-20 11:28:26,807] DEBUG    protocol  RECV  63 bytes  type=INVITE
+[2026-06-20 11:28:26,807] DEBUG    protocol  SENT  99 bytes  type=INVITE
+[2026-06-20 11:28:26,807] DEBUG    protocol  SENT  68 bytes  type=INVITE_SENT
+[2026-06-20 11:28:26,807] INFO     server  'Charlie' invited 'Alice' to room 'Classnote'
+[2026-06-20 11:28:32,966] DEBUG    protocol  RECV  61 bytes  type=INVITE
+[2026-06-20 11:28:32,967] DEBUG    protocol  SENT  99 bytes  type=INVITE
+[2026-06-20 11:28:32,967] DEBUG    protocol  SENT  66 bytes  type=INVITE_SENT
+[2026-06-20 11:28:32,967] INFO     server  'Charlie' invited 'Bob' to room 'Classnote'
+[2026-06-20 11:28:38,666] DEBUG    protocol  RECV  42 bytes  type=JOIN_ROOM
+[2026-06-20 11:28:38,666] INFO     server  'Bob' switched from 'General' to 'Classnote'
+[2026-06-20 11:28:38,667] DEBUG    protocol  SENT  95 bytes  type=USER_LEFT
+[2026-06-20 11:28:38,667] DEBUG    protocol  SENT  99 bytes  type=USER_JOINED
+[2026-06-20 11:28:38,667] DEBUG    protocol  SENT  81 bytes  type=ROOM_JOINED
+[2026-06-20 11:28:43,978] DEBUG    protocol  RECV  40 bytes  type=SEND_MSG
+[2026-06-20 11:28:43,978] DEBUG    protocol  SENT  116 bytes  type=CHAT_MSG
+[2026-06-20 11:28:43,978] DEBUG    protocol  SENT  116 bytes  type=CHAT_MSG
+[2026-06-20 11:28:43,978] INFO     server  [Classnote] Bob: Hello
+[2026-06-20 11:28:52,586] DEBUG    protocol  RECV  42 bytes  type=JOIN_ROOM
+[2026-06-20 11:28:52,586] INFO     server  'Alice' switched from 'General' to 'Classnote'
+[2026-06-20 11:28:52,586] DEBUG    protocol  SENT  101 bytes  type=USER_JOINED
+[2026-06-20 11:28:52,586] DEBUG    protocol  SENT  101 bytes  type=USER_JOINED
+[2026-06-20 11:28:52,586] DEBUG    protocol  SENT  90 bytes  type=ROOM_JOINED
+[2026-06-20 11:28:58,121] DEBUG    protocol  RECV  40 bytes  type=SEND_MSG
+[2026-06-20 11:28:58,122] DEBUG    protocol  SENT  118 bytes  type=CHAT_MSG
+[2026-06-20 11:28:58,122] DEBUG    protocol  SENT  118 bytes  type=CHAT_MSG
+[2026-06-20 11:28:58,122] DEBUG    protocol  SENT  118 bytes  type=CHAT_MSG
+[2026-06-20 11:28:58,122] INFO     server  [Classnote] Alice: Hello
+[2026-06-20 11:29:13,850] DEBUG    protocol  RECV  51 bytes  type=SEND_MSG
+[2026-06-20 11:29:13,850] DEBUG    protocol  SENT  131 bytes  type=CHAT_MSG
+[2026-06-20 11:29:13,850] DEBUG    protocol  SENT  131 bytes  type=CHAT_MSG
+[2026-06-20 11:29:13,850] DEBUG    protocol  SENT  131 bytes  type=CHAT_MSG
+[2026-06-20 11:29:13,850] INFO     server  [Classnote] Charlie: Hello all of you
+[2026-06-20 11:29:36,545] DEBUG    protocol  RECV  67 bytes  type=SEND_MSG
+[2026-06-20 11:29:36,546] DEBUG    protocol  SENT  147 bytes  type=CHAT_MSG
+[2026-06-20 11:29:36,546] DEBUG    protocol  SENT  147 bytes  type=CHAT_MSG
+[2026-06-20 11:29:36,546] DEBUG    protocol  SENT  147 bytes  type=CHAT_MSG
+[2026-06-20 11:29:36,546] INFO     server  [Classnote] Charlie: Send me the Class notes of today
+[2026-06-20 11:29:49,145] DEBUG    protocol  RECV  41 bytes  type=SEND_MSG
+[2026-06-20 11:29:49,146] DEBUG    protocol  SENT  117 bytes  type=CHAT_MSG
+[2026-06-20 11:29:49,146] DEBUG    protocol  SENT  117 bytes  type=CHAT_MSG
+[2026-06-20 11:29:49,146] DEBUG    protocol  SENT  117 bytes  type=CHAT_MSG
+[2026-06-20 11:29:49,146] INFO     server  [Classnote] Bob: Ok bro
+[2026-06-20 11:30:10,841] INFO     server  User 'Bob' disconnected (was in room 'Classnote').
+[2026-06-20 11:30:10,842] DEBUG    protocol  SENT  97 bytes  type=USER_LEFT
+[2026-06-20 11:30:10,842] DEBUG    protocol  SENT  97 bytes  type=USER_LEFT
+[2026-06-20 11:30:15,305] DEBUG    protocol  RECV  22 bytes  type=DISCONNECT
+[2026-06-20 11:30:15,305] INFO     server  User 'Charlie' requested disconnect.
+[2026-06-20 11:30:15,306] WARNING  server  Connection error for 'Charlie': Client requested disconnect
+[2026-06-20 11:30:15,306] INFO     server  User 'Charlie' disconnected (was in room 'Classnote').
+[2026-06-20 11:30:15,306] DEBUG    protocol  SENT  101 bytes  type=USER_LEFT
+[2026-06-20 11:30:16,089] DEBUG    protocol  RECV  22 bytes  type=DISCONNECT
+[2026-06-20 11:30:16,089] INFO     server  User 'Alice' requested disconnect.
+[2026-06-20 11:30:16,090] WARNING  server  Connection error for 'Alice': Client requested disconnect
+[2026-06-20 11:30:16,090] INFO     server  User 'Alice' disconnected (was in room 'Classnote').
+[2026-06-20 12:11:59,435] INFO     server  Server shutting down (KeyboardInterrupt).
+[2026-06-20 12:12:17,859] INFO     server  Server listening on 127.0.0.1:5000  (default rooms: General, Random)
+[2026-06-20 12:12:22,537] INFO     server  New TCP connection from 127.0.0.1:51672
+[2026-06-20 12:12:22,551] DEBUG    protocol  RECV  40 bytes  type=CONNECT
+[2026-06-20 12:12:22,551] INFO     server  User 'Alice' registered from 127.0.0.1:51672
+[2026-06-20 12:12:22,552] DEBUG    protocol  SENT  122 bytes  type=CONNECT_OK
+[2026-06-20 12:12:32,283] INFO     server  New TCP connection from 127.0.0.1:51673
+[2026-06-20 12:12:32,301] DEBUG    protocol  RECV  38 bytes  type=CONNECT
+[2026-06-20 12:12:32,301] INFO     server  User 'Bob' registered from 127.0.0.1:51673
+[2026-06-20 12:12:32,302] DEBUG    protocol  SENT  127 bytes  type=CONNECT_OK
+[2026-06-20 12:12:32,302] DEBUG    protocol  SENT  97 bytes  type=USER_JOINED
+[2026-06-20 12:12:41,594] INFO     server  New TCP connection from 127.0.0.1:51674
+[2026-06-20 12:12:41,602] DEBUG    protocol  RECV  42 bytes  type=CONNECT
+[2026-06-20 12:12:41,602] INFO     server  User 'Charlie' registered from 127.0.0.1:51674
+[2026-06-20 12:12:41,602] DEBUG    protocol  SENT  142 bytes  type=CONNECT_OK
+[2026-06-20 12:12:41,602] DEBUG    protocol  SENT  101 bytes  type=USER_JOINED
+[2026-06-20 12:12:41,602] DEBUG    protocol  SENT  101 bytes  type=USER_JOINED
+[2026-06-20 12:12:53,909] DEBUG    protocol  RECV  44 bytes  type=CREATE_ROOM
+[2026-06-20 12:12:53,909] INFO     server  Room 'Classnote' created by 'Charlie'
+[2026-06-20 12:12:53,909] DEBUG    protocol  SENT  151 bytes  type=ROOM_CREATED
+[2026-06-20 12:12:53,910] DEBUG    protocol  SENT  151 bytes  type=ROOM_CREATED
+[2026-06-20 12:12:53,910] DEBUG    protocol  SENT  151 bytes  type=ROOM_CREATED
+[2026-06-20 12:12:53,910] INFO     server  'Charlie' switched from 'General' to 'Classnote'
+[2026-06-20 12:12:53,911] DEBUG    protocol  SENT  99 bytes  type=USER_LEFT
+[2026-06-20 12:12:53,911] DEBUG    protocol  SENT  99 bytes  type=USER_LEFT
+[2026-06-20 12:12:53,911] DEBUG    protocol  SENT  74 bytes  type=ROOM_JOINED
+[2026-06-20 12:13:00,789] DEBUG    protocol  RECV  63 bytes  type=INVITE
+[2026-06-20 12:13:00,789] DEBUG    protocol  SENT  99 bytes  type=INVITE
+[2026-06-20 12:13:00,789] DEBUG    protocol  SENT  68 bytes  type=INVITE_SENT
+[2026-06-20 12:13:00,789] INFO     server  'Charlie' invited 'Alice' to room 'Classnote'
+[2026-06-20 12:13:05,053] DEBUG    protocol  RECV  61 bytes  type=INVITE
+[2026-06-20 12:13:05,053] DEBUG    protocol  SENT  99 bytes  type=INVITE
+[2026-06-20 12:13:05,053] DEBUG    protocol  SENT  66 bytes  type=INVITE_SENT
+[2026-06-20 12:13:05,053] INFO     server  'Charlie' invited 'Bob' to room 'Classnote'
+[2026-06-20 12:13:08,938] DEBUG    protocol  RECV  42 bytes  type=JOIN_ROOM
+[2026-06-20 12:13:08,938] INFO     server  'Bob' switched from 'General' to 'Classnote'
+[2026-06-20 12:13:08,940] DEBUG    protocol  SENT  95 bytes  type=USER_LEFT
+[2026-06-20 12:13:08,940] DEBUG    protocol  SENT  99 bytes  type=USER_JOINED
+[2026-06-20 12:13:08,941] DEBUG    protocol  SENT  81 bytes  type=ROOM_JOINED
+[2026-06-20 12:13:12,499] DEBUG    protocol  RECV  42 bytes  type=JOIN_ROOM
+[2026-06-20 12:13:12,499] INFO     server  'Alice' switched from 'General' to 'Classnote'
+[2026-06-20 12:13:12,500] DEBUG    protocol  SENT  101 bytes  type=USER_JOINED
+[2026-06-20 12:13:12,501] DEBUG    protocol  SENT  101 bytes  type=USER_JOINED
+[2026-06-20 12:13:12,501] DEBUG    protocol  SENT  90 bytes  type=ROOM_JOINED
+[2026-06-20 12:13:17,640] DEBUG    protocol  RECV  40 bytes  type=SEND_MSG
+[2026-06-20 12:13:17,641] DEBUG    protocol  SENT  118 bytes  type=CHAT_MSG
+[2026-06-20 12:13:17,641] DEBUG    protocol  SENT  118 bytes  type=CHAT_MSG
+[2026-06-20 12:13:17,641] DEBUG    protocol  SENT  118 bytes  type=CHAT_MSG
+[2026-06-20 12:13:17,641] INFO     server  [Classnote] Alice: Hello
+[2026-06-20 12:13:22,224] DEBUG    protocol  RECV  38 bytes  type=SEND_MSG
+[2026-06-20 12:13:22,225] DEBUG    protocol  SENT  114 bytes  type=CHAT_MSG
+[2026-06-20 12:13:22,225] DEBUG    protocol  SENT  114 bytes  type=CHAT_MSG
+[2026-06-20 12:13:22,225] DEBUG    protocol  SENT  114 bytes  type=CHAT_MSG
+[2026-06-20 12:13:22,225] INFO     server  [Classnote] Bob: Hii
+[2026-06-20 12:13:42,504] DEBUG    protocol  RECV  66 bytes  type=SEND_MSG
+[2026-06-20 12:13:42,505] DEBUG    protocol  SENT  146 bytes  type=CHAT_MSG
+[2026-06-20 12:13:42,505] DEBUG    protocol  SENT  146 bytes  type=CHAT_MSG
+[2026-06-20 12:13:42,505] DEBUG    protocol  SENT  146 bytes  type=CHAT_MSG
+[2026-06-20 12:13:42,505] INFO     server  [Classnote] Charlie: Send me the classnotes of today
+[2026-06-20 12:14:56,360] DEBUG    protocol  RECV  22 bytes  type=DISCONNECT
+[2026-06-20 12:14:56,360] INFO     server  User 'Alice' requested disconnect.
+[2026-06-20 12:14:56,360] WARNING  server  Connection error for 'Alice': Client requested disconnect
+[2026-06-20 12:14:56,361] INFO     server  User 'Alice' disconnected (was in room 'Classnote').
+[2026-06-20 12:14:56,361] DEBUG    protocol  SENT  99 bytes  type=USER_LEFT
+[2026-06-20 12:14:56,361] DEBUG    protocol  SENT  99 bytes  type=USER_LEFT
+[2026-06-20 12:14:58,408] DEBUG    protocol  RECV  22 bytes  type=DISCONNECT
+[2026-06-20 12:14:58,408] INFO     server  User 'Bob' requested disconnect.
+[2026-06-20 12:14:58,408] WARNING  server  Connection error for 'Bob': Client requested disconnect
+[2026-06-20 12:14:58,409] INFO     server  User 'Bob' disconnected (was in room 'Classnote').
+[2026-06-20 12:14:58,409] DEBUG    protocol  SENT  97 bytes  type=USER_LEFT
+[2026-06-20 12:14:59,842] DEBUG    protocol  RECV  22 bytes  type=DISCONNECT
+[2026-06-20 12:14:59,842] INFO     server  User 'Charlie' requested disconnect.
+[2026-06-20 12:14:59,843] WARNING  server  Connection error for 'Charlie': Client requested disconnect
+[2026-06-20 12:14:59,843] INFO     server  User 'Charlie' disconnected (was in room 'Classnote').
