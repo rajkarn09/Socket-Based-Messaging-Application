@@ -234,3 +234,10 @@ Bytes on the wire:
 - **Length-Prefixed Framing**: TCP is a stream protocol and has no concept of packet boundaries. "Sticky packets" (merging multiple writes) and fragmentation (splitting writes) are common. The 4-byte header tells the socket receiver exactly how many bytes to read, preventing stream corruption.
 - **JSON Serialization**: Using JSON provides a human-readable, self-describing layout that makes debugging network transactions straightforward while keeping the packet structures clean and easily expandable.
 - **Threading Model**: Utilizing Python's native `threading` module to allocate one thread per connection is robust and simple. Thread-safety is strictly maintained on the server via `threading.Lock()` wrappers surrounding all shared structures.
+
+## Repository Information
+
+GitHub Repository:
+https://github.com/rajkarn09/Socket-Based-Messaging-Application.git
+
+Collaborators have been added through GitHub's repository access management system. Individual contributions can be verified through the commit history and contributor statistics available.
